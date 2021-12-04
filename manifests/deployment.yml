@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: learnlivedevopsintelligentpython 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learnlivedevopsintelligentpython
+  template:
+    metadata:
+      labels:
+        app: learnlivedevopsintelligentpython 
+    spec:
+      containers:
+        - name: learnlivedevopsintelligentpython 
+          image: iepython.azurecr.io/learnlivedevopsintelligentpython
+          ports:
+          - containerPort: 5000
