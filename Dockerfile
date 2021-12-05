@@ -12,4 +12,4 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
-CMD exec gunicorn -b :$PORT extractor.wsgi:application
+CMD exec gunicorn -b :8080 extractor.wsgi:application
