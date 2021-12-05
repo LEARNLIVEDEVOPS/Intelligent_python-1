@@ -16,4 +16,4 @@ spec:
         - name: learnlivedevopsintelligentpython 
           image: ramkitcs/intelligentextractor-python
           ports:
-          - containerPort: 5000
+          - containerPort: 8080
